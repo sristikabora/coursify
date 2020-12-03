@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/reset.css" type="text/css" />
     <link rel="stylesheet" href="styles/index.css" type="text/css" />
 
@@ -17,7 +18,7 @@
 <body>
     <!--Navbar-->
     <header>
-        <div class="wrapper-row">
+        <div class="header-bigscreens">
             <div class="container-2">
                 <a href="index.html"><img src="images\Capture.PNG" alt="logo" width="240" height="50"> </a>
                 <nav class="top-nav">
@@ -32,10 +33,27 @@
                 </nav>
             </div>
         </div>
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="index.html"><img src="images\Capture.PNG" alt="logo" width="170" height="30"> </a>
+                <ul id="myLinks">
+                    <li class="active"><a href="#">Live Classes</a></li>
+                    <li><a href="#">Video Library</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Board</a></li>
+                    <li><a href="#">Exam</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
     </header>
 
     <!--Clarify doubts-->
-    <section class="creative-designer-wrapper">
+    <section class="banner-wrapper">
         <div class="container-1">
             <div class="hero-text">
                 <div class="info">
@@ -115,33 +133,25 @@
                 <ul class=card-wrapper__list>
                     <li class="card-wrapper__list__card">
                         <a href="#">
-                            <div class="sub-img-wrap"><img src="images\subject-1.PNG"
-                                    class="card-wrapper__list__card__yoga-steps" alt="yoga-steps" width="95%"
-                                    height="150"></div>
+                            <div class="sub-img-wrap"><img src="images\subject-1.PNG"alt="yoga-steps"></div>
                             <h3 class="card-wrapper__list__card__service-name">Maths</h3>
                         </a>
                     </li>
                     <li class="card-wrapper__list__card">
                         <a href="#">
-                            <div class="sub-img-wrap"><img src="images\subject-2.PNG"
-                                    class="card-wrapper__list__card__yoga-steps" alt="yoga-steps" width="95%"
-                                    height="150"></div>
+                            <div class="sub-img-wrap"><img src="images\subject-2.PNG" alt="yoga-steps"></div>
                             <h3 class="card-wrapper__list__card__service-name">Physics</h3>
                         </a>
                     </li>
                     <li class="card-wrapper__list__card">
                         <a href="#">
-                            <div class="sub-img-wrap"><img src="images\subject-3.PNG"
-                                    class="card-wrapper__list__card__yoga-steps" alt="yoga-steps" width="95%"
-                                    height="150"></div>
+                            <div class="sub-img-wrap"><img src="images\subject-3.PNG" alt="yoga-steps"></div>
                             <h3 class="card-wrapper__list__card__service-name">Chemistry</h3>
                         </a>
                     </li>
                     <li class="card-wrapper__list__card">
                         <a href="#">
-                            <div class="sub-img-wrap"><img src="images\subject-4.PNG"
-                                    class="card-wrapper__list__card__yoga-steps" alt="yoga-steps" width="95%"
-                                    height="150"></div>
+                            <div class="sub-img-wrap"><img src="images\subject-4.PNG" alt="yoga-steps"></div>
                             <h3 class="card-wrapper__list__card__service-name">Biology</h3>
                         </a>
                     </li>
@@ -157,27 +167,27 @@
         <div class="container-1">
             <div class="solve-doubt-wrapper">
                 <h2 class="section-header">Solve your doubts <span>faster</span></h2>
-            <ul>
-                <li>
-                    <a href="#" class="doubt-card">
-                        <img src="images\doubts-1.PNG" alt="doubt clear">
-                        <div class="doubt-card-text">
-                            <h3 class="doubt-card-text-caption">Accessibility everywhere</h3>
-                            <p>Access to quality education anytime, anywhere</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="doubt-card">
-                        <img src="images\doubts-2.PNG" alt="doubt-solve">
-                        <div class="doubt-card-text">
-                            <h3 class="doubt-card-text-caption">1 million+ videos</h3>
-                            <p>Unlimited access to video solutions</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                <ul>
+                    <li>
+                        <a href="#" class="doubt-card">
+                            <img src="images\doubts-1.PNG" alt="doubt clear">
+                            <div class="doubt-card-text">
+                                <h3 class="doubt-card-text-caption">Accessibility everywhere</h3>
+                                <p>Access to quality education anytime, anywhere</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="doubt-card">
+                            <img src="images\doubts-2.PNG" alt="doubt-solve">
+                            <div class="doubt-card-text">
+                                <h3 class="doubt-card-text-caption">1 million+ videos</h3>
+                                <p>Unlimited access to video solutions</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <img src="images\doubt-solve-img.PNG" alt="alexa picture">
         </div>
     </section>
@@ -206,7 +216,7 @@
                         <div class="jee-text">
                             <div class="info">
                                 <hgroup>
-                                    <h2>Micro concept videos</h2>
+                                    <h3>Micro concept videos</h3>
                                     <p>Find multilingual videos on explainations and frequently confused concepts from
                                         every subject</p>
                                 </hgroup>
@@ -224,7 +234,7 @@
                         <div class="jee-text">
                             <div class="info">
                                 <hgroup>
-                                    <h2>Micro concept videos</h2>
+                                    <h3>Micro concept videos</h3>
                                     <p>Find multilingual videos on explainations and frequently confused concepts from
                                         every subject</p>
                                 </hgroup>
@@ -242,7 +252,7 @@
                         <div class="jee-text">
                             <div class="info">
                                 <hgroup>
-                                    <h2>Micro concept videos</h2>
+                                    <h3>Micro concept videos</h3>
                                     <p>Find multilingual videos on explainations and frequently confused concepts from
                                         every subject</p>
                                 </hgroup>
@@ -262,42 +272,42 @@
     <!--live classes-->
 
     <section class="solve-doubt">
-        <h2 class="section-header"><span>Live</span> classes</h2>
+        <h2 class="section-header live-class-header"><span>Live</span> classes</h2>
         <div class="container-1">
             <video width="47%" controls class="video-1">
                 <source src="videos\Education - 35448.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
             <div class="solve-doubt-wrapper">
-            <ul>
-                <li>
-                    <a href="#" class="doubt-card">
-                        <img src="images\doubts-1.PNG" alt="doubt clear">
-                        <div class="doubt-card-text">
-                            <h3 class="doubt-card-text-caption">Accessibility everywhere</h3>
-                            <p>Access to quality education anytime, anywhere</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="doubt-card">
-                        <img src="images\doubts-2.PNG" alt="doubt-solve">
-                        <div class="doubt-card-text">
-                            <h3 class="doubt-card-text-caption">1 million+ videos</h3>
-                            <p>Unlimited access to video solutions</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="doubt-card">
-                        <img src="images\doubts-1.PNG" alt="doubt clear">
-                        <div class="doubt-card-text">
-                            <h3 class="doubt-card-text-caption">Accessibility everywhere</h3>
-                            <p>Access to quality education anytime, anywhere</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="#" class="doubt-card">
+                            <img src="images\doubts-1.PNG" alt="doubt clear">
+                            <div class="doubt-card-text">
+                                <h3 class="doubt-card-text-caption">Accessibility everywhere</h3>
+                                <p>Access to quality education anytime, anywhere</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="doubt-card">
+                            <img src="images\doubts-2.PNG" alt="doubt-solve">
+                            <div class="doubt-card-text">
+                                <h3 class="doubt-card-text-caption">1 million+ videos</h3>
+                                <p>Unlimited access to video solutions</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="doubt-card">
+                            <img src="images\doubts-1.PNG" alt="doubt clear">
+                            <div class="doubt-card-text">
+                                <h3 class="doubt-card-text-caption">Accessibility everywhere</h3>
+                                <p>Access to quality education anytime, anywhere</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
     </section>
 
     <!--neet carousal-->
@@ -321,7 +331,7 @@
                         <div class="jee-text">
                             <div class="info">
                                 <hgroup>
-                                    <h2>Micro concept videos</h2>
+                                    <h3>Micro concept videos</h3>
                                     <p>Find multilingual videos on explainations and frequently confused concepts from
                                         every subject</p>
                                 </hgroup>
@@ -339,7 +349,7 @@
                         <div class="jee-text">
                             <div class="info">
                                 <hgroup>
-                                    <h2>Micro concept videos</h2>
+                                    <h3>Micro concept videos</h3>
                                     <p>Find multilingual videos on explainations and frequently confused concepts from
                                         every subject</p>
                                 </hgroup>
@@ -357,7 +367,7 @@
                         <div class="jee-text">
                             <div class="info">
                                 <hgroup>
-                                    <h2>Micro concept videos</h2>
+                                    <h3>Micro concept videos</h3>
                                     <p>Find multilingual videos on explainations and frequently confused concepts from
                                         every subject</p>
                                 </hgroup>
@@ -546,58 +556,87 @@
 
 
     <!--quote section-->
-<section class="quote-section">
-    <div class="container container-1">
-        <h2 class="section-header">See what our students have to say</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+    <section class="quote-section">
+        <div class="container container-1">
+            <h2 class="section-header">See what our students have to say</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="slide-1">
-                        <div class="quotation-wrap">
-                            <div class="quotation">
-                                <p class="quotation__quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac est sed est gravida finibus vitae non felis. Sed massa tortor, maximus vitae pretium ut, dapibus a lectus. Nunc et massa quam. Nunc libero augue, mollis consequat pharetra nec, pharetra non justo. Pellentesque eget velit eu risus vehicula tempor. Mauris pretium eros eu risus porttitor, et convallis enim tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim aliquam massa vitae volutpat.</p>
-                                <img src="images\testimonial-1.png" alt="woman face">
-                                <h3>Linnie Walton</h3>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="slide-1">
+                            <div class="quotation-wrap">
+                                <div class="quotation">
+                                    <p class="quotation__quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ac est sed est gravida finibus vitae non felis. Sed massa tortor,
+                                        maximus vitae pretium ut, dapibus a lectus. Nunc et massa quam. Nunc libero
+                                        augue, mollis consequat pharetra nec, pharetra non justo. Pellentesque eget
+                                        velit eu risus vehicula tempor. Mauris pretium eros eu risus porttitor, et
+                                        convallis enim tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In dignissim aliquam massa vitae volutpat.</p>
+                                    <img src="images\testimonial-1.png" alt="woman face">
+                                    <h3>Linnie Walton</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide-1">
+                            <div class="quotation-wrap">
+                                <div class="quotation">
+                                    <p class="quotation__quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ac est sed est gravida finibus vitae non felis. Sed massa tortor,
+                                        maximus vitae pretium ut, dapibus a lectus. Nunc et massa quam. Nunc libero
+                                        augue, mollis consequat pharetra nec, pharetra non justo. Pellentesque eget
+                                        velit eu risus vehicula tempor. Mauris pretium eros eu risus porttitor, et
+                                        convallis enim tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In dignissim aliquam massa vitae volutpat.</p>
+                                    <img src="images\testimonial-1.png" alt="woman face">
+                                    <h3>Linnie Walton</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide-1">
+                            <div class="quotation-wrap">
+                                <div class="quotation">
+                                    <p class="quotation__quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ac est sed est gravida finibus vitae non felis. Sed massa tortor,
+                                        maximus vitae pretium ut, dapibus a lectus. Nunc et massa quam. Nunc libero
+                                        augue, mollis consequat pharetra nec, pharetra non justo. Pellentesque eget
+                                        velit eu risus vehicula tempor. Mauris pretium eros eu risus porttitor, et
+                                        convallis enim tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        In dignissim aliquam massa vitae volutpat.</p>
+                                    <img src="images\testimonial-1.png" alt="woman face">
+                                    <h3>Linnie Walton</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="item">
-                    <div class="slide-1">
-                        <div class="quotation-wrap">
-                            <div class="quotation">
-                                <p class="quotation__quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac est sed est gravida finibus vitae non felis. Sed massa tortor, maximus vitae pretium ut, dapibus a lectus. Nunc et massa quam. Nunc libero augue, mollis consequat pharetra nec, pharetra non justo. Pellentesque eget velit eu risus vehicula tempor. Mauris pretium eros eu risus porttitor, et convallis enim tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim aliquam massa vitae volutpat.</p>
-                                <img src="images\testimonial-1.png" alt="woman face">
-                                <h3>Linnie Walton</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="slide-1">
-                        <div class="quotation-wrap">
-                            <div class="quotation">
-                                <p class="quotation__quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac est sed est gravida finibus vitae non felis. Sed massa tortor, maximus vitae pretium ut, dapibus a lectus. Nunc et massa quam. Nunc libero augue, mollis consequat pharetra nec, pharetra non justo. Pellentesque eget velit eu risus vehicula tempor. Mauris pretium eros eu risus porttitor, et convallis enim tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim aliquam massa vitae volutpat.</p>
-                                <img src="images\testimonial-1.png" alt="woman face">
-                                <h3>Linnie Walton</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
         <div class="buttons btn-jee">
             <a role="button" href="#">Download the app for free!</a>
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        
 </body>
 
 </html>
