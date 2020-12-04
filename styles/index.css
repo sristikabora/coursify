@@ -1,3 +1,7 @@
+/*----------------------------------------------------------------------------------------------
+                    overall body
+--------------------------------------------------------------------------------------------------*/
+    
 body {
     color: #333333;
     font-family: 'Poppins', sans-serif;
@@ -10,9 +14,9 @@ body {
     
     text-decoration: none;
   }
-    /*-----------------------------------------------------
+    /*--------------------------------------------------------------------------------------
                       header
-    -----------------------------------------------------*/
+    ------------------------------------------------------------------------------------------*/
   .header-bigscreens {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -42,17 +46,19 @@ body {
   }
 
 
-    /*-----------------------------------------------------
-                      header for smaller screens
-    -----------------------------------------------------*/
-         /*-----------------media query for smaller screens header-breakpoint 768------------------*/
-    @media screen and (min-width:650px) {
+/*--------------------------------------------------------------------------------------------
+                    header for smaller screens
+-----------------------------------------------------------------------------------------------*/
+
+/*-----------------media query for smaller screens header-breakpoint 650------------------*/
+
+
+    @media screen and (min-width:650px) {  /*for screens more than 650 makes topnav invisible*/
         .topnav{
             display: none;
         }
     }
-         
-    @media screen and (max-width:650px){
+    @media screen and (max-width:650px){    /*for screens less than 650 makes navbar invisible and puts styles for topnav*/
     .header-bigscreens{
         display: none;
     }
@@ -61,11 +67,9 @@ body {
         background-color: white;
         position: relative;
       }
-      
       .topnav #myLinks {
         display: none;
       }
-      
       .topnav a {
         color: rgb(126, 125, 125);
         padding: 14px 16px;
@@ -73,7 +77,6 @@ body {
         font-size: 17px;
         display: block;
       }
-      
       .topnav a.icon {
         background: white;
         display: block;
@@ -81,33 +84,26 @@ body {
         right: 27px;
         top:5px;
       }
-      
       .topnav a:hover {
         background-color: rgba(221, 221, 221, 0.678);
         color: black;
       }
-      
       .active-mob {
         color: white;
       }
+    }
 
-    }
-  /*-----------------------------------------------------
+  /*------------------------------------------------------------------------------------------
                        banner
-    -----------------------------------------------------*/
-    .banner-wrapper {
-        background-image: linear-gradient(0deg, rgba(250, 249, 246, 0.692), rgba(255, 250, 240, 0.788)), url(../images/claudio-schwarz-purzlbaum-MWUeoi1sDaE-unsplash.jpg);
-        background-size: 1486px 728px;
-        height: 665px;
-        background-repeat: no-repeat;
-        background-position: bottom;
-    }
-    /*-----------------media query for banner-breakpoint 1200------------------*/
-@media screen and (max-width:970px){
-    .banner-wrapper{
-        background-size: 1200px 540px;
-        height: 540px;
-    }
+    -------------------------------------------------------------------------------------------*/
+
+
+.banner-wrapper {
+    background-image: linear-gradient(0deg, rgba(250, 249, 246, 0.692), rgba(255, 250, 240, 0.788)), url(../images/claudio-schwarz-purzlbaum-MWUeoi1sDaE-unsplash.jpg);
+    background-size: 1486px 728px;
+    height: 665px;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .banner-wrapper .container-1{
     display: flex;
@@ -151,7 +147,18 @@ body {
     background-image: linear-gradient( #001453d1, #9b0160d0);
     border-radius: 20px;
 }
+h2{
+    font-size: 2.7vw;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #014d99;
+}
+
 /*-----------------media query for banner-multiple breakpoints------------------*/
+
 @media screen and (max-width:1300px){
     .video-wrap{
         height:330px;
@@ -176,17 +183,12 @@ body {
         height:240px;
     }
 }
-h2{
-    font-size: 2.7vw;
-    font-weight: bold;
-    line-height: 1.5em;
-    margin-top: 120px;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #014d99;
-}
-/*-----------------media query for h2 headings per section-breakpoint 1200------------------*/
+
 @media screen and (max-width:970px){
+    .banner-wrapper{
+        background-size: 1200px 540px;
+        height: 540px;
+    }
     h2{
         margin-top: 50px;
         margin-bottom: 0px;
@@ -216,7 +218,7 @@ h2{
         height:170px;
     }
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:650px){  /* removing flex and making arrangement for elements to show one below the other for smaller screen*/
     .banner-wrapper .container-1{
         flex-wrap: wrap;
         justify-content: space-around;
@@ -249,32 +251,31 @@ h2{
         height: 540px;
     }
 }
-    /*-----------------media query for button-breakpoint 550------------------*/
 
-    @media screen and (max-width:550px){
-        .hero-text .info hgroup h1{
-            font-size: 14px;
-        }
-        .banner-wrapper{
-            background-size: 1200px 470px;
-            height: 470px;
-        }
-        .buttons a{
-            padding:10px 10px;
-            font-size: 2vw;
-        }
-        .hero-text .buttons {
-            margin-left: 4.5vw;
-        }
-        .video-wrap {
-            width: 77vw;
-            height: 49vw;
-        }
-        video{
-            width:69vw;
-            height: 40vw;
-        }
+@media screen and (max-width:550px){
+    .hero-text .info hgroup h1{
+        font-size: 14px;
     }
+    .banner-wrapper{
+        background-size: 1200px 470px;
+        height: 470px;
+    }
+    .buttons a{
+        padding:10px 10px;
+        font-size: 2vw;
+    }
+    .hero-text .buttons {
+        margin-left: 4.5vw;
+    }
+    .video-wrap {
+        width: 77vw;
+        height: 49vw;
+    }
+    video{
+        width:69vw;
+        height: 40vw;
+    }
+}
     @media screen and (max-width:450px){
         .banner-wrapper{
             background-size: 1000px 440px;
@@ -288,9 +289,11 @@ h2{
         }
     }
 
+/*-----------------END OF media query for banner----------------------------------------------*/
 
-
-/*------------banner-cards----------------*/
+/*------------------------------------------------------------------------------------------
+                    banner-cards/ Achievement cards!
+-------------------------------------------------------------------------------------------*/
 
 .banner-cards-section{
     margin-top: 100px;
@@ -320,6 +323,8 @@ h2{
     padding-right: 5px;
     line-height: 2vw;
 }
+/*-------------------------------------media query for banner cards---------------------------------------------------*/
+
 
 /*-----------------media query for banner cards-breakpoint 1200------------------*/
 @media screen and (max-width:1200px){
@@ -366,9 +371,12 @@ h2{
     }
 
 }
+/*-------------------------------------END OF media query for banner cards---------------------------------------------------*/
 
 
-/*--------------subjects cards----------------*/
+/*------------------------------------------------------------------------------------------
+                                    subject cards
+-------------------------------------------------------------------------------------------*/
 
 
 .card-wrapper{
@@ -403,6 +411,9 @@ h2{
     color: red;
     font-size: 1.7vw;
 }
+
+/*-------------------------------------------media query for subject cards---------------------------------------------------*/
+
 /*-----------------media query for subject-cards-breakpoint 970------------------*/
 @media screen and (max-width:970px){
     .sub-img-wrap img{
@@ -439,8 +450,12 @@ h2{
     }
 }
 
+/*-------------------------------------------END OF media query for subject cards---------------------------------------------------*/
 
-/*-----------doubt-solve-----------*/
+
+/*------------------------------------------------------------------------------------------
+                                    doubts solving cards and side image
+-------------------------------------------------------------------------------------------*/
 .solve-doubt{
     margin-top: 100px;
 }
@@ -484,6 +499,9 @@ h2{
     box-shadow: 0 0 65px rgba(158, 158, 158, 0.445);
 
 }
+
+/*-------------------------------------------media query for doubt solve cards and side image---------------------------------------------------*/
+
 /*-----------------media query for doubt-solve section -breakpoint 970------------------*/
 @media screen and (max-width:970px){
     .solve-doubt{
@@ -526,7 +544,12 @@ h2{
         line-height: normal;
     }
 }
-/* -------- live classes------------ */
+
+/*-------------------------------------------END OF media query for doubt solve cards and side image---------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------
+                                   live classes
+-------------------------------------------------------------------------------------------*/
 
 .live-class-header{
     text-align: center !important;
@@ -534,6 +557,9 @@ h2{
 .solve-doubt video{
     margin-right: 5%;
 }
+
+/*----------------------------------------------media query for live classes---------------------------------------------------*/
+
 /*-----------------media query for live-class section -breakpoint 970------------------*/
 @media screen and (max-width:970px){
     .solve-doubt video{
@@ -548,7 +574,12 @@ h2{
         margin: 20px 50px;
     }
 }
-/* -------- jee mains------------ */
+
+/*----------------------------------------------END OF media query for live classes---------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------
+                                   JEE Praparation
+-------------------------------------------------------------------------------------------*/
 .slide-1{
     display: flex;
 }
@@ -593,6 +624,7 @@ line-height: 3vw;
     display: flex;
     justify-content: space-around;
 }
+/*----------------------------------------------media query for jee prep---------------------------------------------------*/
 
 /*-----------------media query for header 970------------------*/
 
@@ -643,7 +675,11 @@ line-height: 3vw;
             }
         }
 
-/*---------books--------------*/
+/*----------------------------------------------END OF media query for jee prep---------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------
+                                   books
+-------------------------------------------------------------------------------------------*/
 
 .books-card{
     box-shadow: 0 0 65px rgba(162, 229, 250, 0.555);
@@ -680,7 +716,9 @@ line-height: 3vw;
 }
 
 
-/*---------boards--------------*/
+/*------------------------------------------------------------------------------------------
+                                        boards
+-------------------------------------------------------------------------------------------*/
 
 .boards-card{
     box-shadow: 0 0 65px rgba(253, 236, 190, 0.555);
@@ -716,7 +754,7 @@ line-height: 3vw;
     font-weight: bold;
 }
 
-/*-----------------media query for books and boards, and header for each section bp-768------------------*/
+/*----------------------------media query for books and boards, and header for each section----------------------------*/
 
 @media screen and (max-width:768px){
     .books-card-wrapper-list , .boards-card-wrapper-list{
@@ -731,7 +769,13 @@ line-height: 3vw;
     }
 }
 
-/*----------quote----------*/
+/*----------------------------END OF media query for books and boards, and header for each section----------------------------*/
+
+
+/*------------------------------------------------------------------------------------------
+                                        quote section
+-------------------------------------------------------------------------------------------*/
+
 .quote-section{
     background-image: linear-gradient(0deg, rgba(250, 249, 246, 0.692), rgba(255, 250, 240, 0.788)), url(../images/kelly-sikkema-Oz_J_FXKvIs-unsplash.jpg);
     background-size: 1486px 1190px;
@@ -764,7 +808,10 @@ line-height: 3vw;
       font-weight: bold;
       text-align: center;
   }
-  /*-----------------media query for quote section -breakpoint 768------------------*/
+
+
+/*----------------------------media query for quote section----------------------------*/
+
 
 @media screen and (max-width:970px){
 .quote-section{
@@ -783,4 +830,7 @@ line-height: 3vw;
         height: 877px;
     }
 }
+
+
+/*----------------------------END OF media query for quote section----------------------------*/
 
